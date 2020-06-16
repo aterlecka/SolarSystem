@@ -1,5 +1,5 @@
 .mercury-container {
-  animation: zooming 10s infinite linear;
+  animation: zooming 2.89016s infinite linear;
   height: 10vmin;
   left: 50%;
   position: absolute;
@@ -9,7 +9,7 @@
 }
 
 .mercury {
-  animation: orbiting 10s infinite linear;
+  animation: orbiting 2.89016s infinite linear;
   height: 100%;
   position: relative;
   width: 100%;
@@ -23,7 +23,6 @@
   left: 80px;
   transform: scaleX(0.33);
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPBAMAAADJ+Ih5AAAABGdBTUEAALGPC/xhBQAAADBQTFRFqqWjubWzoZyZjoiFqqWiu7e1nZaToZyarqmnAAAAq6Wi2tXSurSxy8bCxL670czJ3zIDEAAAAAp0Uk5TclBQUOvj+xCAAOCI6hkAAACSSURBVAjXAYcAeP8AmZeEbeWHmZAAmTSq7M2kKZAAk2rN7O7M4ZAAdKzf7f/s/nAAjt2+u7/f/YAAXf/7u/3vzlAA6uv/u97d/aAAasv+/93+3GAAz+//3t3+ymAAWr3f/93+7lAAjOzrv73f3oAAdKzLv/3t5XAAk6rM/87qopAAmTbOzOzGKZAAmZeErsWHmZDnbFcFNI0NnwAAAABJRU5ErkJggg==);
-  /* a black shadow from left and white from right */
   background-size: 50px;
   margin: 80px auto;
   border-radius: 50%;
@@ -41,7 +40,7 @@
     transform: rotateZ(0deg) translate(-10%) rotateZ(0deg) scale(1);
   }
   25% {
-    transform: rotateZ(90deg) translate(-20%) rotateZ(-90deg) scale(0.4);
+    transform: rotateZ(90deg) translate(-10%) rotateZ(-90deg) scale(0.4);
   }
   50% {
     transform: rotateZ(180deg) translate(-33%) rotateZ(-180deg) scale(1);

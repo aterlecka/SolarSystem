@@ -1,8 +1,6 @@
 $bg-inner: #e032a9;
-
 $star: #f4ece6;
-$spin:  10s;
-//$spin:  2.89016s;
+$spin:  2.89016s;
 
 
 
@@ -32,17 +30,11 @@ $spin:  10s;
   left: 80px;
   transform: scaleX(0.33);
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPBAMAAADJ+Ih5AAAABGdBTUEAALGPC/xhBQAAADBQTFRFqqWjubWzoZyZjoiFqqWiu7e1nZaToZyarqmnAAAAq6Wi2tXSurSxy8bCxL670czJ3zIDEAAAAAp0Uk5TclBQUOvj+xCAAOCI6hkAAACSSURBVAjXAYcAeP8AmZeEbeWHmZAAmTSq7M2kKZAAk2rN7O7M4ZAAdKzf7f/s/nAAjt2+u7/f/YAAXf/7u/3vzlAA6uv/u97d/aAAasv+/93+3GAAz+//3t3+ymAAWr3f/93+7lAAjOzrv73f3oAAdKzLv/3t5XAAk6rM/87qopAAmTbOzOzGKZAAmZeErsWHmZDnbFcFNI0NnwAAAABJRU5ErkJggg==);
-  //width: 70px;
-  //height: 70px;
-  /* a black shadow from left and white from right */
-  //box-shadow: inset 16px 0 40px 3px rgba(0, 0, 0, 0.9),
-  //inset -3px 0 5px 2px rgba(255, 255, 255, 0.16);
   background-size: 50px;
   margin: 80px auto;
   border-radius: 50%;
   position: absolute;
   animation-name: move, scale, rotate;
-  //animation-duration: 2s, 2s, 2s;
   animation-duration: 2.89016s;
   animation-iteration-count: infinite, infinite, infinite;
   animation-timing-function: ease-in-out, linear, linear;
@@ -56,7 +48,7 @@ $spin:  10s;
     transform: rotateZ(0deg) translate(-10%) rotateZ(0deg) scale(1);
   }
   25% {
-    transform: rotateZ(90deg) translate(-20%) rotateZ(-90deg) scale(0.4);
+    transform: rotateZ(90deg) translate(-10%) rotateZ(-90deg) scale(0.4);
   }
   50% {
     transform: rotateZ(180deg) translate(-33%) rotateZ(-180deg) scale(1);
