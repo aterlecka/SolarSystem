@@ -13,26 +13,58 @@
   height: 100%;
   position: relative;
   width: 100%;
+  animation-name: orbiting-mars, zooming;
 }
 
 .mars-orbit {
-  width: 18vmin;
-  height: 18vmin;
-  top: 0;
-  left: 95px;
+  width: 8vmin;
+  height: 8vmin;
+  top: -120px;
+  left: 60px;
   transform: scaleX(0.33);
-  background-color: darkorange;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAABGdBTUEAALGPC/xhBQAAAGBQTFRFsW89lWA2jVwzsm8+qGo72oVJrW08h1gxlWA15IpMrW09jlw0l2E2nGM3v3ZC3YdK3odKyHtE75BP8JFQ8JFQ8JFQ8JFQ8JFQw3hD8JFQ8JFQ8JFQ8JFQ8JFQ8JFQAAAAe3ooYQAAACB0Uk5Tk0+hrcTz6g7P5tkiYurz49bk79XR3vvm2PH26ezi2QCQ4vSgAAABm0lEQVQoz1VSWXaEMAzLLAw7ZHMSx0vvf8uaTtvX+icQYSRbch/vGrf7ftV0v43fV+59bNP+Oo6jtXAs0/YHWg1o4TxnqyG05bn+QOt0AUIRKWVV39qyvqF1f4VTFSqiZgWuerarz6D7KwyoqkI19k5UFYfjeUHbdJzEkLQS9cLCSELDsX24cVoCVYYMHXsphQk0Aw2v0W17OCv2CPwFIWnSBDAfmzOmSt0KmZhj1ZwERLU5N72GwsyIREwCKZtIsAe/uL3NpapW42ciMTWitXI8g9uDj/aCAEZoaqRHtf8ZmduPFAtW1kz2BWntXQRUo0FhTrVcKxLTZmNbi7Fd0NR8Vhsz5x6jZMHIrJrS3Nx98WAQ5lyJsXdGGxs0eeduS5Brs1+y2dZRe0EBajc3LuaHEKRks8qFIYrC0EZb79KM31qUbCO9l44mJWyXKY9mbMnkJzAeo0Ni/3hb+WynqDGkDJHNa/Okrd8BWJpPag1gHpdO5vL6G5tnC15rRBaI6sNj/Ru25Wjez3E+LTTbvxxaRB/PdtVj+4noJ91nOp3NTB6wAAAAAElFTkSuQmCC);
   box-shadow: inset 16px 0 40px 3px rgba(0, 0, 0, 0.9), inset -3px 0 5px 2px rgba(255, 255, 255, 0.16);
   background-size: 190px;
   margin: 80px auto;
   border-radius: 50%;
   position: absolute;
-  animation-name: move, scale, rotate;
-  animation-duration: 7s, 7s, 7s;
+  animation-name: move, scale;
   animation-iteration-count: infinite, infinite, infinite;
   animation-timing-function: ease-in-out, linear, linear;
   z-index: 1;
   display: flex;
+}
+
+@keyframes orbiting-mars {
+  0% {
+    transform: rotateZ(0deg) translate(-30%) rotateZ(0deg) scale(1);
+  }
+  25% {
+    transform: rotateZ(90deg) translate(-30%) rotateZ(-90deg) scale(0.4);
+  }
+  50% {
+    transform: rotateZ(180deg) translate(-30%) rotateZ(-180deg) scale(1);
+  }
+  75% {
+    transform: rotateZ(270deg) translate(-30%) rotateZ(-270deg) scale(1.3);
+  }
+  100% {
+    transform: rotateZ(360deg) translate(-30%) rotateZ(-360deg) scale(1);
+  }
+}
+@keyframes zooming {
+  0% {
+    z-index: 5;
+  }
+  49% {
+    z-index: 5;
+  }
+  50% {
+    z-index: 15;
+  }
+  100% {
+    z-index: 15;
+  }
 }
 
 /*# sourceMappingURL=marsStyle.css.map */
