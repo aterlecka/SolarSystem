@@ -12,7 +12,10 @@ $spin: 50s;
   top: 50%;
   transform: scaleX(3) translate(-17%, -50%);
   width: 35vmin;
+  //border: 1px solid rgba(#fff, .8);
+
 }
+
 
 .jupiter {
   animation: orbiting $spin infinite linear;
@@ -20,9 +23,12 @@ $spin: 50s;
   position: relative;
   width: 100%;
   animation-name: orbiting-jupiter, zooming;
+
+
 }
 
 .jupiter-orbit {
+
   width: 18vmin;
   height: 18vmin;
   top: 0;
