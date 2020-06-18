@@ -3,9 +3,6 @@ $star: #f4ece6;
 $spin: 22.57017s;
 
 
-
-
-
 .mars-container {
   animation: zooming $spin infinite linear;
   height: 10vmin;
@@ -43,7 +40,6 @@ $spin: 22.57017s;
   z-index: 1;
   display: flex;
 }
-
 
 
 @keyframes orbiting-mars {
