@@ -17,8 +17,8 @@
 }
 
 .mercury-orbit {
-  width: 4vmin;
-  height: 4vmin;
+  width: 3vmin;
+  height: 3vmin;
   top: -80px;
   left: 80px;
   transform: scaleX(0.33);

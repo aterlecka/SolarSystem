@@ -1,8 +1,5 @@
-$bg-inner: #e032a9;
 $star: #f4ece6;
-$spin:  2.89016s;
-
-
+$spin: 2.89016s;
 
 
 .mercury-container {
@@ -20,12 +17,14 @@ $spin:  2.89016s;
   height: 100%;
   position: relative;
   width: 100%;
+
   animation-name: orbiting-mercury, zooming;
+
 }
 
 .mercury-orbit {
-  width: 4vmin;
-  height: 4vmin;
+  width: 3vmin;
+  height: 3vmin;
   top: -80px;
   left: 80px;
   transform: scaleX(0.33);
